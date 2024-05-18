@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="f">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="adaptive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="logo"></div>
+
+    <header>    
+        <div class="container">
+            <div class="ribbon">
+                <span id="title">Регистрация</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="topmenu">
+                <a href="index.html"><li>Главная</li></a>
+                <li><a class="submenu-link">О нас</a>
+                <ul class="submenu">
+                    <li><a href="обзоры.html">Обзоры</a></li>
+                    <li><a href="обзоры.html">Тоже обзоры</a></li>
+                    <li><a href="form.html">Зарегистрироваться</a></li>
+                </ul>
+                </li>
+                <a href="kontakts.html"><li>Контакты</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="form">
+        <form id="registration-form">
+            <div class="form-group">
+              <label for="input-first-name">Имя</label>
+              <input type="text" class="form-control" id="input-first-name" name="first-name" required pattern="[A-Za-zА-Яа-яЁё]{3,}">
+            </div>
+            <div class="form-group">
+              <label for="input-last-name">Фамилия</label>
+              <input type="text" class="form-control" id="input-last-name" name="last-name" required pattern="[A-Za-zА-Яа-яЁё]{3,}">
+            </div>
+            <div class="form-group">
+              <label for="input-username">Логин</label>
+              <input type="text" class="form-control" id="input-username" name="username" required minlength="5" maxlength="8">
+            </div>
+            <div class="form-group">
+              <label for="input-phone">Телефон</label>
+              <input type="tel" class="form-control" id="input-phone" name="phone" required pattern="^\+?\d{11}$">
+            </div>
+            <div class="form-group">
+              <label for="input-email">e-mail</label>
+              <input type="email" class="form-control" id="input-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="input-password">Пароль</label>
+              <input type="password" class="form-control" id="input-password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_]).{8,}$">
+            </div>
+            <div class="form-group">
+              <label>Пол</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="radio-gender-male" value="male" required>
+                <label class="form-check-label" for="radio-gender-male">
+                  Мужской
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="radio-gender-female" value="female">
+                <label class="form-check-label" for="radio-gender-female">
+                  Женский
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select-year">Год рождения</label>
+              <select class="form-control" id="select-year" name="year" required>
+                <option value="" disabled selected>Выберите год</option>
+                <option value="1995">2003</option>
+                <option value="1996">2003</option>
+                <option value="1997">2003</option>
+                <option value="1998">2003</option>
+                <option value="1999">2003</option>
+                <option value="2000">2003</option>
+                <option value="2001">2002</option>
+                <option value="2002">2003</option>
+                <option value="2003">2003</option>
+                <option value="2004">2003</option>
+                <option value="2005">2003</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+          </form>
+        
+    </main>
+    <script>
+    const form = document.querySelector('#registration-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const firstNameInput = form.querySelector('#input-first-name');
+  const lastNameInput = form.querySelector('#input-last-name');
+  const usernameInput = form.querySelector('#input-username');
+  const phoneInput = form.querySelector('#input-phone');
+  const emailInput = form.querySelector('#input-email');
+  const passwordInput = form.querySelector('#input-password');
+
+  const isValidFirstName = firstNameInput.checkValidity();
+  const isValidLastName = lastNameInput.checkValidity();
+  const isValidUsername = usernameInput.checkValidity();
+  const isValidPhone = phoneInput.checkValidity();
+  const isValidEmail = emailInput.checkValidity();
+  const isValidPassword = passwordInput.checkValidity();
+
+  if (isValidFirstName && isValidLastName && isValidUsername && isValidPhone && isValidEmail && isValidPassword) {
+    form.submit();
+  } else {
+    alert('Пожалуйста, проверьте правильность введенных данных');
+  }
+});
+</script>
+    <script>   
+        $(document).ready(function(){
+         $('.carousel').slick({
+             slidesToShow: 4, 
+             slidesToScroll: 4,
+             prevArrow: $('.prev'),
+             nextArrow: $('.next')
+         });
+         });
+       </script>
+ 
+     <script type="text/javascript">    
+         $(document).ready(function() {
+             var accordion_head = $('.topmenu > li > a'),
+             accordion_body = $('.topmenu li > .submenu');
+             accordion_head.on('click', function(event) {
+                 event.preventDefault();
+                 $(this).next().stop(true,false).slideToggle('normal', 'swing');
+             });
+         });
+         </script> 
+
+    <footer>
+        <div class="foot">
+            <span>Все права защищены ©</span><p>
+            <span>Create by: Смелов Артем</span><p>
+                <a href="https://vk.com/m3tra_3"> <img height="50px" width="50 px" src="img/vk.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

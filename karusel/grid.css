@@ -1,0 +1,295 @@
+.grid{
+    overflow: hidden;
+    margin: 0px;
+}
+.ob{
+  overflow: hidden;
+
+}
+
+
+*{
+    font-family:  fantasy;
+}
+
+header{
+  width: 100vw;
+  height: 18vh;
+  margin: 0px;
+  line-height: 1;
+}
+body {
+    background: url('img/background.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 120px; 
+  z-index: 9999; 
+}
+
+main {
+  width: 100%;
+  height: 560 px;
+}
+
+.main {
+    max-width:2200px;
+    min-height: 600px;
+    display:flex;
+    margin:20px auto;
+    flex-direction: row;
+    justify-content:center;
+    align-content:stretch;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content:stretch;
+}
+
+
+.logo {
+    background: url('img/logo.png') center no-repeat;
+    background-size: contain;
+    width: 8vmin;
+    height: 10vmin;
+    margin-left: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(170, 66, 255);
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+
+.ribbon {
+    align-items: center;
+    width: 1200px;
+    min-width: 400px;
+    flex-wrap:wrap;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:stretch;
+}
+
+#title {
+    cursor: default;
+    text-align: center;
+    background: rgb(151, 37, 226);
+    padding: 1.3vmin 15vmin;
+    font-size: 4.5vmin;
+    font-weight: 800;
+}
+
+#title:after {
+    border-top: 10px solid red;
+    border-right: 10px solid transparent;
+}
+
+.topmenu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.topmenu li{
+  margin-right: 4vmin;
+  list-style-type: none;
+  display: block;
+  width: 20vmin;
+  text-align: center;
+  position: relative;
+  line-height: 1.5;
+  
+}
+.topmenu a{
+  text-decoration: none;
+  color: #e9d9d9;
+}
+
+
+li a {
+  color: black;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.submenu-link {
+  cursor:pointer;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  overflow: hidden;
+  z-index: 1;
+  list-style: none;
+}
+
+.submenu a{
+  color: #e9d9d9;
+}
+
+.submenu li {
+  background-color: rgb(156, 46, 219);
+
+}
+
+
+.obzor{
+  color: #ffffff;
+  margin-right: 5vmin;
+  margin-left: 5vmin;
+  width: 90%;
+}
+.obzor h1{
+  text-align: center;
+  }
+.obzor h2{
+text-align: center;
+}
+
+.obzor ul{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.podrobnee{
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+}
+.obzor img{
+  height: 170px;
+  width: 340px;
+}
+
+.cs{
+  max-height: 1000px;
+  overflow-x: visible;
+}
+
+.slider {
+  width: 90vw;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+.slider div img {
+  background-size: cover;
+  height: 550px;
+  width: 95vw;
+}
+
+.karusel {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+}
+
+.prev, .next {
+  width: 40px; 
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.foot {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  width: 100vw;
+  height: 100px;
+  z-index: 2;
+  color: #ffffff;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  main{
+    display: none;
+  }
+}
+
+.mob{
+  height: 550px;
+}
+
+.mob2{
+  height: 800px;
+}
+
+.k{
+  height: 550px;
+}
+
+.form-group label, .form-group input, .form-group select {
+  display: block;
+  width: 100%;
+}
+
+.form-group input, .form-group select {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.form-check {
+  margin-top: 16px;
+}
+
+.btn {
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0062cc;
+}
+
+.f{
+  height: 620px;
+}
+
+.form{
+  width: 700px;
+  margin-left: 280px;
+  color: #ffffff;
+}

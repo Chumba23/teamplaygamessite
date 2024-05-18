@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="ob">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="adaptive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <title>Связь с нами</title>
+</head>
+<body>
+    <div class="logo"></div>
+
+    <header>    
+        <div class="container">
+            <div class="ribbon">
+                <span id="title">Связь с нами</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="topmenu">
+                <a href="index.html"><li>Главная</li></a>
+                <li><a class="submenu-link">О нас</a>
+                <ul class="submenu">
+                    <li><a href="обзоры.html">Обзоры</a></li>
+                    <li><a href="обзоры.html">Тоже обзоры</a></li>
+                    <li><a href="form.html">Зарегистрироваться</a></li>
+                </ul>
+                </li>
+                <a href="kontakts.html"><li>Контакты</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="k">
+        <div class="obzor"> 
+            <h1>Связь с нами: </h1>
+            <h1 class="obzor h1"> email :  artemsmelov8@gmail.com</h1>
+        </div>
+    </main>
+    
+    <script>   
+        $(document).ready(function(){
+         $('.carousel').slick({
+             slidesToShow: 4, 
+             slidesToScroll: 4,
+             prevArrow: $('.prev'),
+             nextArrow: $('.next')
+         });
+         });
+       </script>
+ 
+     <script type="text/javascript">    
+         $(document).ready(function() {
+             var accordion_head = $('.topmenu > li > a'),
+             accordion_body = $('.topmenu li > .submenu');
+             accordion_head.on('click', function(event) {
+                 event.preventDefault();
+                 $(this).next().stop(true,false).slideToggle('normal', 'swing');
+             });
+         });
+         </script> 
+
+    <footer>
+        <div class="foot">
+            <span>Все права защищены ©</span><p>
+            <span>Create by: Смелов Артем</span><p>
+                <a href="https://vk.com/m3tra_3"> <img height="50px" width="50 px" src="img/vk.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

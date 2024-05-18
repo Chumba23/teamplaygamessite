@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <title>Обзоры</title>
+</head>
+<body>
+    <div class="logo"></div>
+
+    <header>    
+        <div class="container">
+            <div class="ribbon">
+                <span id="title">ОБЗОРЫ</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="topmenu">
+                <a href="index.html"><li>Главная</li></a>
+                <li><a class="submenu-link">О нас</a>
+                <ul class="submenu">
+                    <li><a href="обзоры.html">Обзоры</a></li>
+                    <li><a href="обзоры.html">Тоже обзоры</a></li>
+                    <li><a href="form.html">Зарегистрироваться</a></li>
+                </ul>
+                </li>
+                <a href="kontakts.html"><li>Контакты</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="mob2">
+
+       
+
+        <div class="obzor">
+            <h1>Counter-Strike Global Offensive</h1>
+            <div class="carousel">
+                <div><img src="img/1.jpg" alt="img/1.jpg"></div>
+                <div><img src="img/2.jpg" alt="img/2.jpg"></div>
+                <div><img src="img/3.jpg" alt="img/3.jpg"></div>
+                <div><img src="img/4.jpg" alt="img/4.jpg"></div>
+                <div><img src="img/5.jpg" alt="img/5.jpg"></div>
+                <div><img src="img/6.jpg" alt="img/6.jpg"></div>
+                <div><img src="img/7.jpg" alt="img/7.jpg"></div>
+                <div><img src="img/8.jpg" alt="img/8.jpg"></div>
+              </div>
+            <h2>Что же такое CS GO?<a href="обзоры.html"><sub class="podrobnee">свернуть</sub></a></h2> 
+            <ul>
+                <li> CS GO это когда раскраски оружия стоят дороже крутых игровых девайсов.</li> 
+                <li> CS GO это когда ты обязан дропнуть свой красивый калаш всей команде.</li>
+                <li> CS GO это когда открываешь 20 сундуков и получаешь 20 кусков синего г**на.</li>
+                <li> CS GO это когда тебя добавляют школьники и предлагают over 9000 сундуков в обмен на твой нож.</li>
+                <li> CS GO это когда тебя добавляет школьник и начинает выпрашивать в подарок шмотку ценой в 3500 рублей, приводя при этом аргумент "да ты ж богатый, что тебе стоит!".</li>
+                <li> CS GO это когда тебе по 10 раз в день присылают ссылки на трояны в надежде обчистить твой инвентарь.</li>
+                <li> CS GO это когда тебя выгоняют только потому что ты Русский.</li>
+                <li> CS GO это когда ты спалил свой стул после игры в соревновательном режиме.</li>
+                <li> CS GO это когда "глобалы" создают по 10 аккаунтов и получают удовлетворение, играя против "калашей".</li>
+                <li> CS GO это когда ты Russian Noob, если остался против пятерых, убил четверых но не добил пятого.</li>
+                <li> CS GO это когда ты Russian Noob при счете 21-7-10, а у ближайшего тиммейта 8-0-16.</li>
+                <li> CS GO это когда ты выучил польский и шведский за одну-две катки.</li>
+                <li> CS GO это когда в соревновательном режиме поляков больше, чем в самой Польше.</li>
+                <li> CS GO это когда ты в одиночку открываешь А, а бомба уже про***на на Б.</li>
+                <li> CS GO это когда на твои советы и вопросы тебе отвечают "stfu Russian".</li>
+                <li> CS GO это когда утратил три звания за день только из-за того, что каждый раз играешь против "глобалов", играющих со второго аккаунта.</li>
+                <li> CS GO это когда каждый третий тиммейт - набустенный сильвер.</li>
+                <li> CS GO это когда против тебя играет пять ♥♥♥♥♥♥♥♥♥♥ с АВП.</li>
+                <li> CS GO это когда одного "беркута" и четырех "калашей" кидает против пяти "супримов".</li>
+                <li> CS GO это когда высаживаешь все 30 патронов в одного ♥♥♥♥♥♥♥♥♥ и наносиишь 99 in 7, а тот рандомным выстрелом попадает тебе в голову.</li>
+                <li> CS GO это когда VAC показательно банит профессиональных игроков, но не может забанить ♥♥♥♥♥♥♥♥♥♥, который простреливает всю команду через три стены, имея при этом 2.2 часа в игре.</li>
+            </ul>
+                <hr>
+                Все это CS GO!!! Не Болейте!!!!
+        </div>
+    </main>
+
+    <script>   
+       $(document).ready(function(){
+        $('.carousel').slick({
+            slidesToShow: 4, 
+            slidesToScroll: 4,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        });
+        });
+      </script>
+
+    <script type="text/javascript">    
+        $(document).ready(function() {
+            var accordion_head = $('.topmenu > li > a'),
+            accordion_body = $('.topmenu li > .submenu');
+            accordion_head.on('click', function(event) {
+                event.preventDefault();
+                $(this).next().stop(true,false).slideToggle('normal', 'swing');
+            });
+        });
+        </script> 
+    <footer>
+        <div class="foot">
+            <span>Все права защищены ©</span><p>
+            <span>Create by: Смелов Артем</span><p>
+            <a href="https://vk.com/m3tra_3"> <img height="50px" width="50 px" src="img/vk.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
